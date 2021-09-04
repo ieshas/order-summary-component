@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+}
+
+.container {
+  width: 327px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+}
+
+#hero {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 22px;
+}
+
+h1,
+.plan_type {
+  color: #1f2e55;
+}
+
+.order_summary {
+  width: 263px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.plan_ordered {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f7f9ff;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px 0;
+  border-radius: 11px;
+}
+
+.plan_ordered p {
+  margin: 0;
+}
+
+.plan_type,
+a {
+  font-weight: 700;
+}
+
+a {
+  color: #382ae1;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #766CF1;
+}
+
+.plan_price,
+p {
+  color: #717fa6;
+}
+
+button {
+  width: 279px;
+  height: 50px;
+  border-radius: 11px;
+  border: none;
+  margin: 5px 0;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+#purchase {
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+#cancel {
+  background-color: transparent;
+  color: #717fa6;
+  margin-bottom: 10px;
+}
+
+#purchase:hover {
+  background-color: #766CF1;
+}
+
+#cancel:hover {
+  color: #1f2e55;
+}
+
+@media (min-width: 990px) {
+  body {
+    background-image: url('images/pattern-background-desktop.svg');
+    font-size: 16px;
+  }
+
+  .container {
+    width: 450px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .plan_ordered,
+  button {
+    width: 354px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
